@@ -1,3 +1,7 @@
+### 0.1.2 2019-02-15
+
+* Explictly build hello binary
+
 ### 0.1.1 2019-02-14
 
 * Exit 0 when using -help switch

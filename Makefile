@@ -19,6 +19,6 @@ clean:
 
 hello: main.go
 	go fmt
-	go build
+	go build -o hello
 
 .PHONY: all build install uninstall clean
