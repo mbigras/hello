@@ -20,16 +20,19 @@ Args:
     	Name to greet (default "world")
 
 Options:
-
-  -help
-    	Print help menu`
+`
 		// other flags defined below
 		fmt.Println(usage)
 		flag.PrintDefaults()
 	}
+	help := flag.Bool("help", false, "Print help menu")
 	version := flag.Bool("version", false, "Print version")
 	flag.CommandLine.SetOutput(os.Stdout)
 	flag.Parse()
+	if *help {
+		flag.Usage()
+		os.Exit(0)
+	}
 	if *version {
 		fmt.Printf("hello version %s\n", Version)
 		os.Exit(0)
