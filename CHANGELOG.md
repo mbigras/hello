@@ -1,3 +1,7 @@
+### 0.1.1 2019-02-14
+
+* Exit 0 when using -help switch
+
 ### 0.1.0 2019-02-13
 
 * Initial release
