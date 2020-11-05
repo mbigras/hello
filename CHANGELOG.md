@@ -1,3 +1,7 @@
+### 0.1.3 2020-11-05
+
+* Add feature1 that prints "hello feature1" 
+
 ### 0.1.2 2019-02-15
 
 * Explictly build hello binary
