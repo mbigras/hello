@@ -6,7 +6,8 @@ import (
 	"os"
 )
 
-const Version = "0.1.2"
+// Version specifies the application version
+const Version = "0.1.3"
 
 func main() {
 	flag.Usage = func() {
