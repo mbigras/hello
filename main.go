@@ -27,6 +27,7 @@ Options:
 	}
 	help := flag.Bool("help", false, "Print help menu")
 	version := flag.Bool("version", false, "Print version")
+	feature1 := flag.Bool("feature1", false, "Print feature1")
 	flag.CommandLine.SetOutput(os.Stdout)
 	flag.Parse()
 	if *help {
@@ -35,6 +36,10 @@ Options:
 	}
 	if *version {
 		fmt.Printf("hello version %s\n", Version)
+		os.Exit(0)
+	}
+	if *feature1 {
+		fmt.Println("hello feature1")
 		os.Exit(0)
 	}
 	name := flag.Arg(0)
